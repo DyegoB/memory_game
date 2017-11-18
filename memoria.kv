@@ -1,11 +1,16 @@
 <Jogo>:
+    #definition the class Jogo
     orientation: 'vertical'
     Button:
+    #this Button initiates the creation of the second instance
         text: 'Play'
         size_hint: 1.0, 1.0
         on_press: root.on_press_click()
     Button:
+    #this Button finalize this application
+    #but not currently implemented
         text: 'Exit'
         size_hint: 1.0, 1.0
 <Tela>:
+    #definition the second class Tela that makes up the creation of widgets
     orientation: 'tb-lr'

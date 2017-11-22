@@ -23,6 +23,7 @@ class Jogo(BoxLayout):
 class Tela(StackLayout):
     def __init__(self, **kwargs):
         super(Tela, self).__init__(**kwargs)
+        #creating list "ID" to store ids of the buttons
         self.list_id = []
         x = 1
         for i in range(100):
@@ -36,8 +37,10 @@ class Tela(StackLayout):
             self.add_widget(bt)
 
         #raffle pictures
+        #creating list img
         list_img = ['poker.jpg', 'poker_1.jpg']
         self.dc = dict()
+        #adding the random.choice images to a dictionary "dc"
         for id in self.list_id:
             img = random.choice(list_img)
             self.dc[id] = img
